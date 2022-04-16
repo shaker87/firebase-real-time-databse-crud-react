@@ -11,11 +11,13 @@ import './App.css';
 import AddEdit from './pages/AddEdit';
 import { View } from './pages/View';
 import { About } from './pages/About';
+import DarkLight from "./components/DarkLight";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <DarkLight />
       <NewPage />
         <Routes>
           <Route path="/add" element={<AddEdit />} />
